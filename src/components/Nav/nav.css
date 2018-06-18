@@ -1,0 +1,22 @@
+.navbar{
+    background: #5133a4;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    z-index: 99;
+    white-space: nowrap;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 20px 0;
+    width: 33.3%;
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-family: cursive;
+}

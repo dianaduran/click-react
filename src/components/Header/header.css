@@ -1,0 +1,22 @@
+.header{
+    background-color: #2c323c;
+    background-image: url('../../image/background.jpg');
+    color: #fff;
+    min-height: 400px;
+    padding-top: 264px;
+    padding-bottom: 140px;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 77px
+}
+
+h1{
+    font-size: 5.5rem !important;
+}
+
+h2{
+    padding-top: 41px;
+    font-size: 3rem;
+}

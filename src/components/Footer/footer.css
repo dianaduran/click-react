@@ -1,0 +1,30 @@
+.footer{
+    background:lavander;
+    height: 100px;
+    position: relative;
+    color: #fff;
+    overflow: auto;
+    margin-top: 77px;
+   
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+}
+
+img{
+    height: 36px;
+}
+
+h6{
+    color: blueviolet;
+    font-size: 21px
+}
+
+/* .title{
+    color: white;
+    font-family: cursive;
+} */
