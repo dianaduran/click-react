@@ -29,18 +29,28 @@ class App extends Component {
   };
 
   clickImgID=id=>{  
-      if(clicked.indexOf(id)<0){
+    //the img is not clicked before and topScore is less or equal to count, increse both
+      if(clicked.indexOf(id)<0 && TopScore<=this.state.count){
          clicked.push(id);
          this.setState({ count: this.state.count + 1 });
+         TopScore+=1;
          this.setState({dogs: shuffleArray(dogs)})
          text="You guessed correctly!";
       }
+      //the img is not clicked before and topScore is more than count, increse just the count
+      else if(clicked.indexOf(id)<0 && TopScore > this.state.count){
+        clicked.push(id);
+        this.setState({ count: this.state.count + 1 });
+        this.setState({dogs: shuffleArray(dogs)})
+        text="You guessed correctly!";
+      }
      else
      {
+       //the img was clicked before the topScore is equal and the score is reseted to 0
       clicked=[];
       this.setState({ count: 0 });
       this.setState({dogs: shuffleArray(dogs)});
-       TopScore+=1;
+     //  TopScore+=1;
        text="You guessed incorrectly!";
      }
  }

@@ -12,7 +12,7 @@ const Nav = (props) => (
      {props.text} 
   </li>
   <li className="nav-item">
-     Score : {props.count} | Top Score : {props.topScore}
+    Score:   {props.count}   |   Top Score:   {props.topScore}
   </li>
    </nav>
 );
